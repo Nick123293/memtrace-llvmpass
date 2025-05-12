@@ -1,0 +1,1 @@
+/home/and21829/llvm/llvm_19/bin/clang++ -fPIC  -fno-rtti  -shared -Wl,-soname,libtracemem.so -o libtracemem.so CMakeFiles/tracemem.dir/tracemem.cpp.o 
