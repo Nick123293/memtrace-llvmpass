@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "/home/and21829/llvm/llvm_19/bin/clang++")
+set(CMAKE_CXX_COMPILER "/home/and21829/llvm/llvm_19/build/bin/clang++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "Clang")
 set(CMAKE_CXX_COMPILER_VERSION "19.1.7")
@@ -18,9 +18,9 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 set(CMAKE_AR "/usr/bin/ar")
-set(CMAKE_CXX_COMPILER_AR "/home/and21829/llvm/llvm_19/bin/llvm-ar")
+set(CMAKE_CXX_COMPILER_AR "/home/and21829/llvm/llvm_19/build/bin/llvm-ar")
 set(CMAKE_RANLIB "/usr/bin/ranlib")
-set(CMAKE_CXX_COMPILER_RANLIB "/home/and21829/llvm/llvm_19/bin/llvm-ranlib")
+set(CMAKE_CXX_COMPILER_RANLIB "/home/and21829/llvm/llvm_19/build/bin/llvm-ranlib")
 set(CMAKE_LINKER "/usr/bin/ld")
 set(CMAKE_COMPILER_IS_GNUCXX )
 set(CMAKE_CXX_COMPILER_LOADED 1)

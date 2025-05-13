@@ -25,13 +25,13 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/home/and21829/llvm/llvm_19/bin/clang++
+CMAKE_CXX_COMPILER:STRING=/home/and21829/llvm/llvm_19/build/bin/clang++
 
 //LLVM archiver
-CMAKE_CXX_COMPILER_AR:FILEPATH=/home/and21829/llvm/llvm_19/bin/llvm-ar
+CMAKE_CXX_COMPILER_AR:FILEPATH=/home/and21829/llvm/llvm_19/build/bin/llvm-ar
 
 //Generate index for LLVM archive
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/home/and21829/llvm/llvm_19/bin/llvm-ranlib
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/home/and21829/llvm/llvm_19/build/bin/llvm-ranlib
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -51,13 +51,13 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_CXX_STANDARD:STRING=17
 
 //C compiler
-CMAKE_C_COMPILER:STRING=/home/and21829/llvm/llvm_19/bin/clang
+CMAKE_C_COMPILER:STRING=/home/and21829/llvm/llvm_19/build/bin/clang
 
 //LLVM archiver
-CMAKE_C_COMPILER_AR:FILEPATH=/home/and21829/llvm/llvm_19/bin/llvm-ar
+CMAKE_C_COMPILER_AR:FILEPATH=/home/and21829/llvm/llvm_19/build/bin/llvm-ar
 
 //Generate index for LLVM archive
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/home/and21829/llvm/llvm_19/bin/llvm-ranlib
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/home/and21829/llvm/llvm_19/build/bin/llvm-ranlib
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -387,8 +387,6 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Details about finding LibEdit
-FIND_PACKAGE_MESSAGE_DETAILS_LibEdit:INTERNAL=[/usr/include][/usr/lib64/libedit.so][v2.11()]
 //Details about finding LibXml2
 FIND_PACKAGE_MESSAGE_DETAILS_LibXml2:INTERNAL=[/usr/lib64/libxml2.so][/usr/include/libxml2][v2.9.7()]
 //Details about finding ZLIB
@@ -396,7 +394,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[/usr/lib64/libz.so][/usr/include][v1
 //Details about finding zstd
 FIND_PACKAGE_MESSAGE_DETAILS_zstd:INTERNAL=[/usr/lib64/libzstd.so][/usr/include][v()]
 //Have include histedit.h
-HAVE_HISTEDIT_H:INTERNAL=1
+HAVE_HISTEDIT_H:INTERNAL=
 //ADVANCED property for variable: LIBXML2_INCLUDE_DIR
 LIBXML2_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: LIBXML2_LIBRARY

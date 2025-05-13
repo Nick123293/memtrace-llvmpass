@@ -60,15 +60,15 @@ include CMakeFiles/tracemem.dir/flags.make
 CMakeFiles/tracemem.dir/tracemem.cpp.o: CMakeFiles/tracemem.dir/flags.make
 CMakeFiles/tracemem.dir/tracemem.cpp.o: ../tracemem.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tracemem.dir/tracemem.cpp.o"
-	/home/and21829/llvm/llvm_19/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tracemem.dir/tracemem.cpp.o -c /home/and21829/llvm/memtrace-llvmpass/tracemem.cpp
+	/home/and21829/llvm/llvm_19/build/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tracemem.dir/tracemem.cpp.o -c /home/and21829/llvm/memtrace-llvmpass/tracemem.cpp
 
 CMakeFiles/tracemem.dir/tracemem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tracemem.dir/tracemem.cpp.i"
-	/home/and21829/llvm/llvm_19/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/and21829/llvm/memtrace-llvmpass/tracemem.cpp > CMakeFiles/tracemem.dir/tracemem.cpp.i
+	/home/and21829/llvm/llvm_19/build/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/and21829/llvm/memtrace-llvmpass/tracemem.cpp > CMakeFiles/tracemem.dir/tracemem.cpp.i
 
 CMakeFiles/tracemem.dir/tracemem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tracemem.dir/tracemem.cpp.s"
-	/home/and21829/llvm/llvm_19/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/and21829/llvm/memtrace-llvmpass/tracemem.cpp -o CMakeFiles/tracemem.dir/tracemem.cpp.s
+	/home/and21829/llvm/llvm_19/build/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/and21829/llvm/memtrace-llvmpass/tracemem.cpp -o CMakeFiles/tracemem.dir/tracemem.cpp.s
 
 # Object files for target tracemem
 tracemem_OBJECTS = \

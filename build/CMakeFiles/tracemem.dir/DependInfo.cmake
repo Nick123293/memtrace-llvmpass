@@ -11,6 +11,7 @@ set(CMAKE_CXX_COMPILER_ID "Clang")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/and21829/llvm/llvm_19/include"
+  "/home/and21829/llvm/llvm_19/lib/clang/19/include"
   )
 
 # Targets to which this target links.

@@ -1,4 +1,5 @@
 #include "llvm/IR/LegacyPassManager.h"
+#include "llvm/IR/Module.h"
 #include "llvm/Passes/PassBuilder.h"
 #include "llvm/Passes/PassPlugin.h"
 #include "llvm/Support/raw_ostream.h"
@@ -7,10 +8,28 @@ using namespace llvm;
  
 namespace {
 struct MemoryTrace : public llvm::PassInfoMixin<MemoryTrace> {
-	llvm::PreservedAnalyses run(llvm::Module &M,
-				llvm::ModuleAnalysisManager &) {
-		errs() << "In here\n\n";
-		return llvm::PreservedAnalyses::all();
+	llvm::PreservedAnalyses run(llvm::Module &M, llvm::ModuleAnalysisManager &) 
+	{
+		Function *main = M.getFunction("main");
+		if (main) {
+				addGlobalMemoryTraceFP(M);
+				errs() << "Found main in module " << M.getName() << "\n";
+				return llvm::PreservedAnalyses::none();
+		} else {
+				errs() << "Did not find main in " << M.getName() << "\n";
+				return llvm::PreservedAnalyses::all();
+		}
+	}
+	const std::string FilePointerVarName = "_MemoryTraceFP";
+ 
+	void addGlobalMemoryTraceFP(llvm::Module &M) 
+	{
+		auto &CTX = M.getContext();
+	
+		M.getOrInsertGlobal(FilePointerVarName, PointerType::getUnqual(Type::getInt8Ty(CTX)));
+	
+		GlobalVariable *namedGlobal = M.getNamedGlobal(FilePointerVarName);
+		namedGlobal->setLinkage(GlobalValue::ExternalLinkage);
 	}
  
 	bool runOnModule(llvm::Module &M) {

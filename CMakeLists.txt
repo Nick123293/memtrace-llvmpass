@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
 project(tracemem-llvmpass)
-
 #===============================================================================
 # 1. LOAD LLVM CONFIGURATION
 #===============================================================================
@@ -34,7 +33,7 @@ endif()
 # 3. ADD THE TARGET
 #===============================================================================
 add_library(tracemem SHARED tracemem.cpp)
-
+target_include_directories(tracemem SYSTEM PRIVATE /home/and21829/llvm/llvm_19/lib/clang/19/include)
 # Allow undefined symbols in shared objects on Darwin (this is the default
 # behaviour on Linux)
 target_link_libraries(tracemem
