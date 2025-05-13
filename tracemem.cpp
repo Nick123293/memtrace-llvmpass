@@ -12,12 +12,13 @@ struct MemoryTrace : public llvm::PassInfoMixin<MemoryTrace> {
 	{
 		Function *main = M.getFunction("main");
 		if (main) {
-				addGlobalMemoryTraceFP(M);
-				errs() << "Found main in module " << M.getName() << "\n";
-				return llvm::PreservedAnalyses::none();
+			addGlobalMemoryTraceFP(M);
+			addMemoryTraceFPInitialization(M, *main);
+			errs() << "Found main in module " << M.getName() << "\n";
+			return llvm::PreservedAnalyses::none();
 		} else {
-				errs() << "Did not find main in " << M.getName() << "\n";
-				return llvm::PreservedAnalyses::all();
+			errs() << "Did not find main in " << M.getName() << "\n";
+			return llvm::PreservedAnalyses::all();
 		}
 	}
 	const std::string FilePointerVarName = "_MemoryTraceFP";
@@ -25,11 +26,51 @@ struct MemoryTrace : public llvm::PassInfoMixin<MemoryTrace> {
 	void addGlobalMemoryTraceFP(llvm::Module &M) 
 	{
 		auto &CTX = M.getContext();
-	
-		M.getOrInsertGlobal(FilePointerVarName, PointerType::getUnqual(Type::getInt8Ty(CTX)));
-	
-		GlobalVariable *namedGlobal = M.getNamedGlobal(FilePointerVarName);
-		namedGlobal->setLinkage(GlobalValue::ExternalLinkage);
+		// the type of FILE* (we're using i8* for simplicity)
+		PointerType *PtrTy = PointerType::getUnqual(Type::getInt8Ty(CTX));
+
+		// This will create the global if it doesn't exist, or return the existing one
+		Constant *maybeGV = M.getOrInsertGlobal(FilePointerVarName, PtrTy);
+		auto *GV = dyn_cast<GlobalVariable>(maybeGV);
+		assert(GV && "getOrInsertGlobal didn't give us a GlobalVariable!");
+
+		// Make it externally‐linkable
+		GV->setLinkage(GlobalValue::ExternalLinkage);
+		// **This line actually *defines* it** as a null pointer:
+		GV->setInitializer(ConstantPointerNull::get(PtrTy));
+	}
+
+	void addMemoryTraceFPInitialization(llvm::Module& M, llvm::Function &MainFunc) {
+		auto &CTX = M.getContext();
+	 
+		std::vector<llvm::Type*> FopenArgs{
+										PointerType::getUnqual(Type::getInt8Ty(CTX)),
+										PointerType::getUnqual(Type::getInt8Ty(CTX))
+										};
+	 
+		FunctionType *FopenTy = FunctionType::get(PointerType::getUnqual(Type::getInt8Ty(CTX)),
+										FopenArgs,
+										false);
+	 
+		FunctionCallee Fopen = M.getOrInsertFunction("fopen", FopenTy);
+	 
+		Constant *FopenFileNameStr = llvm::ConstantDataArray::getString(CTX, "memory-traces.log");
+		Constant *FopenFilenameStrVar = M.getOrInsertGlobal("FopenFileNameStr", FopenFileNameStr->getType());
+		dyn_cast<GlobalVariable>(FopenFilenameStrVar)->setInitializer(FopenFileNameStr);
+	 
+		Constant *FopenModeStr = llvm::ConstantDataArray::getString(CTX, "w+");
+		Constant *FopenModeStrVar = M.getOrInsertGlobal("FopenModeStr", FopenModeStr->getType());
+		dyn_cast<GlobalVariable>(FopenModeStrVar)->setInitializer(FopenModeStr);
+	 
+		IRBuilder<> Builder(&*MainFunc.getEntryBlock().getFirstInsertionPt());
+		llvm::Value *FopenFilenameStrPtr = Builder.CreatePointerCast(FopenFilenameStrVar, FopenArgs[0],
+																		"fileNameStr");
+		llvm::Value *FopenModeStrPtr = Builder.CreatePointerCast(FopenModeStrVar, FopenArgs[0],
+																		"modeStr");
+		llvm::Value *FopenReturn = Builder.CreateCall(Fopen, {FopenFilenameStrPtr, FopenModeStrPtr});
+	 
+		GlobalVariable *FPGlobal = M.getNamedGlobal(FilePointerVarName);
+		Builder.CreateStore(FopenReturn, FPGlobal);
 	}
  
 	bool runOnModule(llvm::Module &M) {

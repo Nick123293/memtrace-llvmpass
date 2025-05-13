@@ -8,4 +8,4 @@ cmake -DLT_LLVM_INSTALL_DIR=/home/and21829/llvm/llvm_19/build \
     ..
 make
 cd ../
-clang -S -emit-llvm test-file.cpp -o test-file.ll
+clang -S -emit-llvm test-file.c -o test-file.ll
