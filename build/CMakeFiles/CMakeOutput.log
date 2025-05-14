@@ -28,28 +28,28 @@ The CXX compiler identification is Clang, found in "/home/and21829/llvm/memtrace
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_f920b/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_f920b.dir/build.make CMakeFiles/cmTC_f920b.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_33185/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_33185.dir/build.make CMakeFiles/cmTC_33185.dir/build
 gmake[1]: Entering directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f920b.dir/testCCompiler.c.o
-/home/and21829/llvm/llvm_19/build/bin/clang    -o CMakeFiles/cmTC_f920b.dir/testCCompiler.c.o   -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_f920b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f920b.dir/link.txt --verbose=1
-/home/and21829/llvm/llvm_19/build/bin/clang      -rdynamic CMakeFiles/cmTC_f920b.dir/testCCompiler.c.o  -o cmTC_f920b 
+Building C object CMakeFiles/cmTC_33185.dir/testCCompiler.c.o
+/home/and21829/llvm/llvm_19/build/bin/clang    -o CMakeFiles/cmTC_33185.dir/testCCompiler.c.o   -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_33185
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33185.dir/link.txt --verbose=1
+/home/and21829/llvm/llvm_19/build/bin/clang      -rdynamic CMakeFiles/cmTC_33185.dir/testCCompiler.c.o  -o cmTC_33185 
 gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_31e84/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_31e84.dir/build.make CMakeFiles/cmTC_31e84.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_fbbb0/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_fbbb0.dir/build.make CMakeFiles/cmTC_fbbb0.dir/build
 gmake[1]: Entering directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_31e84.dir/CMakeCCompilerABI.c.o
-/home/and21829/llvm/llvm_19/build/bin/clang    -o CMakeFiles/cmTC_31e84.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_31e84
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31e84.dir/link.txt --verbose=1
-/home/and21829/llvm/llvm_19/build/bin/clang     -v -rdynamic CMakeFiles/cmTC_31e84.dir/CMakeCCompilerABI.c.o  -o cmTC_31e84 
+Building C object CMakeFiles/cmTC_fbbb0.dir/CMakeCCompilerABI.c.o
+/home/and21829/llvm/llvm_19/build/bin/clang    -o CMakeFiles/cmTC_fbbb0.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_fbbb0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbbb0.dir/link.txt --verbose=1
+/home/and21829/llvm/llvm_19/build/bin/clang     -v -rdynamic CMakeFiles/cmTC_fbbb0.dir/CMakeCCompilerABI.c.o  -o cmTC_fbbb0 
 clang version 19.1.7 (https://github.com/llvm/llvm-project.git cd708029e0b2869e80abe31ddb175f7c35361f90)
 Target: x86_64-unknown-linux-gnu
 Thread model: posix
@@ -59,7 +59,7 @@ Selected GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8
 Candidate multilib: .;@m64
 Candidate multilib: 32;@m32
 Selected multilib: .;@m64
- "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -export-dynamic -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_31e84 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_31e84.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
+ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -export-dynamic -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fbbb0 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_fbbb0.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
 gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
 
 
@@ -67,14 +67,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_31e84/fast"]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_31e84.dir/build.make CMakeFiles/cmTC_31e84.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_fbbb0/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_fbbb0.dir/build.make CMakeFiles/cmTC_fbbb0.dir/build]
   ignore line: [gmake[1]: Entering directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_31e84.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/home/and21829/llvm/llvm_19/build/bin/clang    -o CMakeFiles/cmTC_31e84.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_31e84]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31e84.dir/link.txt --verbose=1]
-  ignore line: [/home/and21829/llvm/llvm_19/build/bin/clang     -v -rdynamic CMakeFiles/cmTC_31e84.dir/CMakeCCompilerABI.c.o  -o cmTC_31e84 ]
+  ignore line: [Building C object CMakeFiles/cmTC_fbbb0.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/and21829/llvm/llvm_19/build/bin/clang    -o CMakeFiles/cmTC_fbbb0.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_fbbb0]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbbb0.dir/link.txt --verbose=1]
+  ignore line: [/home/and21829/llvm/llvm_19/build/bin/clang     -v -rdynamic CMakeFiles/cmTC_fbbb0.dir/CMakeCCompilerABI.c.o  -o cmTC_fbbb0 ]
   ignore line: [clang version 19.1.7 (https://github.com/llvm/llvm-project.git cd708029e0b2869e80abe31ddb175f7c35361f90)]
   ignore line: [Target: x86_64-unknown-linux-gnu]
   ignore line: [Thread model: posix]
@@ -87,7 +87,7 @@ Parsed C implicit link information from above output:
   ignore line: [@m32]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -export-dynamic -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_31e84 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_31e84.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+  link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -export-dynamic -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fbbb0 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_fbbb0.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
     arg [/usr/bin/ld] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
@@ -98,7 +98,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_31e84] ==> ignore
+    arg [cmTC_fbbb0] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o] ==> ignore
@@ -108,7 +108,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/lib] ==> dir [/lib]
     arg [-L/usr/lib] ==> dir [/usr/lib]
-    arg [CMakeFiles/cmTC_31e84.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_fbbb0.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -136,14 +136,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_6925e/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_6925e.dir/build.make CMakeFiles/cmTC_6925e.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_bdb9f/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_bdb9f.dir/build.make CMakeFiles/cmTC_bdb9f.dir/build
 gmake[1]: Entering directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6925e.dir/feature_tests.c.o
-/home/and21829/llvm/llvm_19/build/bin/clang   -std=c11 -o CMakeFiles/cmTC_6925e.dir/feature_tests.c.o   -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_6925e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6925e.dir/link.txt --verbose=1
-/home/and21829/llvm/llvm_19/build/bin/clang      -rdynamic CMakeFiles/cmTC_6925e.dir/feature_tests.c.o  -o cmTC_6925e 
+Building C object CMakeFiles/cmTC_bdb9f.dir/feature_tests.c.o
+/home/and21829/llvm/llvm_19/build/bin/clang   -std=c11 -o CMakeFiles/cmTC_bdb9f.dir/feature_tests.c.o   -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_bdb9f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bdb9f.dir/link.txt --verbose=1
+/home/and21829/llvm/llvm_19/build/bin/clang      -rdynamic CMakeFiles/cmTC_bdb9f.dir/feature_tests.c.o  -o cmTC_bdb9f 
 gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
 
 
@@ -156,14 +156,14 @@ gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFi
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_0529a/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_0529a.dir/build.make CMakeFiles/cmTC_0529a.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_35cf3/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_35cf3.dir/build.make CMakeFiles/cmTC_35cf3.dir/build
 gmake[1]: Entering directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0529a.dir/feature_tests.c.o
-/home/and21829/llvm/llvm_19/build/bin/clang   -std=c99 -o CMakeFiles/cmTC_0529a.dir/feature_tests.c.o   -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_0529a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0529a.dir/link.txt --verbose=1
-/home/and21829/llvm/llvm_19/build/bin/clang      -rdynamic CMakeFiles/cmTC_0529a.dir/feature_tests.c.o  -o cmTC_0529a 
+Building C object CMakeFiles/cmTC_35cf3.dir/feature_tests.c.o
+/home/and21829/llvm/llvm_19/build/bin/clang   -std=c99 -o CMakeFiles/cmTC_35cf3.dir/feature_tests.c.o   -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_35cf3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35cf3.dir/link.txt --verbose=1
+/home/and21829/llvm/llvm_19/build/bin/clang      -rdynamic CMakeFiles/cmTC_35cf3.dir/feature_tests.c.o  -o cmTC_35cf3 
 gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
 
 
@@ -176,14 +176,14 @@ gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFi
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_a8330/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_a8330.dir/build.make CMakeFiles/cmTC_a8330.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_16425/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_16425.dir/build.make CMakeFiles/cmTC_16425.dir/build
 gmake[1]: Entering directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a8330.dir/feature_tests.c.o
-/home/and21829/llvm/llvm_19/build/bin/clang   -std=c90 -o CMakeFiles/cmTC_a8330.dir/feature_tests.c.o   -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_a8330
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8330.dir/link.txt --verbose=1
-/home/and21829/llvm/llvm_19/build/bin/clang      -rdynamic CMakeFiles/cmTC_a8330.dir/feature_tests.c.o  -o cmTC_a8330 
+Building C object CMakeFiles/cmTC_16425.dir/feature_tests.c.o
+/home/and21829/llvm/llvm_19/build/bin/clang   -std=c90 -o CMakeFiles/cmTC_16425.dir/feature_tests.c.o   -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_16425
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16425.dir/link.txt --verbose=1
+/home/and21829/llvm/llvm_19/build/bin/clang      -rdynamic CMakeFiles/cmTC_16425.dir/feature_tests.c.o  -o cmTC_16425 
 gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
 
 
@@ -194,28 +194,28 @@ gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFi
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_d3b39/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_d3b39.dir/build.make CMakeFiles/cmTC_d3b39.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_442f7/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_442f7.dir/build.make CMakeFiles/cmTC_442f7.dir/build
 gmake[1]: Entering directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d3b39.dir/testCXXCompiler.cxx.o
-/home/and21829/llvm/llvm_19/build/bin/clang++     -o CMakeFiles/cmTC_d3b39.dir/testCXXCompiler.cxx.o -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_d3b39
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3b39.dir/link.txt --verbose=1
-/home/and21829/llvm/llvm_19/build/bin/clang++       -rdynamic CMakeFiles/cmTC_d3b39.dir/testCXXCompiler.cxx.o  -o cmTC_d3b39 
+Building CXX object CMakeFiles/cmTC_442f7.dir/testCXXCompiler.cxx.o
+/home/and21829/llvm/llvm_19/build/bin/clang++     -o CMakeFiles/cmTC_442f7.dir/testCXXCompiler.cxx.o -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_442f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_442f7.dir/link.txt --verbose=1
+/home/and21829/llvm/llvm_19/build/bin/clang++       -rdynamic CMakeFiles/cmTC_442f7.dir/testCXXCompiler.cxx.o  -o cmTC_442f7 
 gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_14cf1/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_14cf1.dir/build.make CMakeFiles/cmTC_14cf1.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_74282/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_74282.dir/build.make CMakeFiles/cmTC_74282.dir/build
 gmake[1]: Entering directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_14cf1.dir/CMakeCXXCompilerABI.cpp.o
-/home/and21829/llvm/llvm_19/build/bin/clang++     -o CMakeFiles/cmTC_14cf1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_14cf1
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14cf1.dir/link.txt --verbose=1
-/home/and21829/llvm/llvm_19/build/bin/clang++      -v -rdynamic CMakeFiles/cmTC_14cf1.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_14cf1 
+Building CXX object CMakeFiles/cmTC_74282.dir/CMakeCXXCompilerABI.cpp.o
+/home/and21829/llvm/llvm_19/build/bin/clang++     -o CMakeFiles/cmTC_74282.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_74282
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74282.dir/link.txt --verbose=1
+/home/and21829/llvm/llvm_19/build/bin/clang++      -v -rdynamic CMakeFiles/cmTC_74282.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_74282 
 clang version 19.1.7 (https://github.com/llvm/llvm-project.git cd708029e0b2869e80abe31ddb175f7c35361f90)
 Target: x86_64-unknown-linux-gnu
 Thread model: posix
@@ -225,7 +225,7 @@ Selected GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8
 Candidate multilib: .;@m64
 Candidate multilib: 32;@m32
 Selected multilib: .;@m64
- "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -export-dynamic -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_14cf1 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_14cf1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
+ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -export-dynamic -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_74282 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_74282.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
 gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
 
 
@@ -233,14 +233,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_14cf1/fast"]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_14cf1.dir/build.make CMakeFiles/cmTC_14cf1.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_74282/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_74282.dir/build.make CMakeFiles/cmTC_74282.dir/build]
   ignore line: [gmake[1]: Entering directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_14cf1.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/home/and21829/llvm/llvm_19/build/bin/clang++     -o CMakeFiles/cmTC_14cf1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_14cf1]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14cf1.dir/link.txt --verbose=1]
-  ignore line: [/home/and21829/llvm/llvm_19/build/bin/clang++      -v -rdynamic CMakeFiles/cmTC_14cf1.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_14cf1 ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_74282.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/home/and21829/llvm/llvm_19/build/bin/clang++     -o CMakeFiles/cmTC_74282.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_74282]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74282.dir/link.txt --verbose=1]
+  ignore line: [/home/and21829/llvm/llvm_19/build/bin/clang++      -v -rdynamic CMakeFiles/cmTC_74282.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_74282 ]
   ignore line: [clang version 19.1.7 (https://github.com/llvm/llvm-project.git cd708029e0b2869e80abe31ddb175f7c35361f90)]
   ignore line: [Target: x86_64-unknown-linux-gnu]
   ignore line: [Thread model: posix]
@@ -253,7 +253,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [@m32]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -export-dynamic -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_14cf1 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_14cf1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+  link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -export-dynamic -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_74282 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_74282.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
     arg [/usr/bin/ld] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
@@ -264,7 +264,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_14cf1] ==> ignore
+    arg [cmTC_74282] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o] ==> ignore
@@ -274,7 +274,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/lib] ==> dir [/lib]
     arg [-L/usr/lib] ==> dir [/usr/lib]
-    arg [CMakeFiles/cmTC_14cf1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_74282.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -300,14 +300,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
 Change Dir: /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_53f18/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_53f18.dir/build.make CMakeFiles/cmTC_53f18.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_59840/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_59840.dir/build.make CMakeFiles/cmTC_59840.dir/build
 gmake[1]: Entering directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_53f18.dir/feature_tests.cxx.o
-/home/and21829/llvm/llvm_19/build/bin/clang++    -std=c++1z -o CMakeFiles/cmTC_53f18.dir/feature_tests.cxx.o -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_53f18
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53f18.dir/link.txt --verbose=1
-/home/and21829/llvm/llvm_19/build/bin/clang++       -rdynamic CMakeFiles/cmTC_53f18.dir/feature_tests.cxx.o  -o cmTC_53f18 
+Building CXX object CMakeFiles/cmTC_59840.dir/feature_tests.cxx.o
+/home/and21829/llvm/llvm_19/build/bin/clang++    -std=c++1z -o CMakeFiles/cmTC_59840.dir/feature_tests.cxx.o -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_59840
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59840.dir/link.txt --verbose=1
+/home/and21829/llvm/llvm_19/build/bin/clang++       -rdynamic CMakeFiles/cmTC_59840.dir/feature_tests.cxx.o  -o cmTC_59840 
 gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
 
 
@@ -373,14 +373,14 @@ gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFi
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_ad801/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_ad801.dir/build.make CMakeFiles/cmTC_ad801.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_3e58e/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_3e58e.dir/build.make CMakeFiles/cmTC_3e58e.dir/build
 gmake[1]: Entering directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ad801.dir/feature_tests.cxx.o
-/home/and21829/llvm/llvm_19/build/bin/clang++    -std=c++14 -o CMakeFiles/cmTC_ad801.dir/feature_tests.cxx.o -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_ad801
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad801.dir/link.txt --verbose=1
-/home/and21829/llvm/llvm_19/build/bin/clang++       -rdynamic CMakeFiles/cmTC_ad801.dir/feature_tests.cxx.o  -o cmTC_ad801 
+Building CXX object CMakeFiles/cmTC_3e58e.dir/feature_tests.cxx.o
+/home/and21829/llvm/llvm_19/build/bin/clang++    -std=c++14 -o CMakeFiles/cmTC_3e58e.dir/feature_tests.cxx.o -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_3e58e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e58e.dir/link.txt --verbose=1
+/home/and21829/llvm/llvm_19/build/bin/clang++       -rdynamic CMakeFiles/cmTC_3e58e.dir/feature_tests.cxx.o  -o cmTC_3e58e 
 gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
 
 
@@ -446,14 +446,14 @@ gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFi
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_b992a/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_b992a.dir/build.make CMakeFiles/cmTC_b992a.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_2ae48/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_2ae48.dir/build.make CMakeFiles/cmTC_2ae48.dir/build
 gmake[1]: Entering directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b992a.dir/feature_tests.cxx.o
-/home/and21829/llvm/llvm_19/build/bin/clang++    -std=c++11 -o CMakeFiles/cmTC_b992a.dir/feature_tests.cxx.o -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_b992a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b992a.dir/link.txt --verbose=1
-/home/and21829/llvm/llvm_19/build/bin/clang++       -rdynamic CMakeFiles/cmTC_b992a.dir/feature_tests.cxx.o  -o cmTC_b992a 
+Building CXX object CMakeFiles/cmTC_2ae48.dir/feature_tests.cxx.o
+/home/and21829/llvm/llvm_19/build/bin/clang++    -std=c++11 -o CMakeFiles/cmTC_2ae48.dir/feature_tests.cxx.o -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_2ae48
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ae48.dir/link.txt --verbose=1
+/home/and21829/llvm/llvm_19/build/bin/clang++       -rdynamic CMakeFiles/cmTC_2ae48.dir/feature_tests.cxx.o  -o cmTC_2ae48 
 gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
 
 
@@ -519,14 +519,14 @@ gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFi
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_830a1/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_830a1.dir/build.make CMakeFiles/cmTC_830a1.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_622c6/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_622c6.dir/build.make CMakeFiles/cmTC_622c6.dir/build
 gmake[1]: Entering directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_830a1.dir/feature_tests.cxx.o
-/home/and21829/llvm/llvm_19/build/bin/clang++    -std=c++98 -o CMakeFiles/cmTC_830a1.dir/feature_tests.cxx.o -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_830a1
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_830a1.dir/link.txt --verbose=1
-/home/and21829/llvm/llvm_19/build/bin/clang++       -rdynamic CMakeFiles/cmTC_830a1.dir/feature_tests.cxx.o  -o cmTC_830a1 
+Building CXX object CMakeFiles/cmTC_622c6.dir/feature_tests.cxx.o
+/home/and21829/llvm/llvm_19/build/bin/clang++    -std=c++98 -o CMakeFiles/cmTC_622c6.dir/feature_tests.cxx.o -c /home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_622c6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_622c6.dir/link.txt --verbose=1
+/home/and21829/llvm/llvm_19/build/bin/clang++       -rdynamic CMakeFiles/cmTC_622c6.dir/feature_tests.cxx.o  -o cmTC_622c6 
 gmake[1]: Leaving directory '/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/CMakeTmp'
 
 

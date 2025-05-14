@@ -205,7 +205,7 @@ LIBXML2_XMLLINT_EXECUTABLE:FILEPATH=/usr/bin/xmllint
 LLVM_DIR:PATH=/home/and21829/llvm/llvm_19/lib/cmake/llvm
 
 //LLVM installation directory
-LT_LLVM_INSTALL_DIR:PATH=/home/and21829/llvm/llvm_19/build
+LT_LLVM_INSTALL_DIR:PATH=/home/and21829/llvm/llvm_19
 
 //Path to a file.
 LibEdit_INCLUDE_DIRS:PATH=/usr/include
