@@ -1,12 +1,12 @@
-#include "llvm/IR/LegacyPassManager.h"
 #include "llvm/IR/Module.h"
 #include "llvm/IR/IRBuilder.h"
+#include "llvm/IR/LegacyPassManager.h"
 #include "llvm/Passes/PassBuilder.h"
 #include "llvm/Passes/PassPlugin.h"
 #include "llvm/Support/raw_ostream.h"
- 
+
 using namespace llvm;
- 
+
 namespace {
 struct MemoryTrace : public llvm::PassInfoMixin<MemoryTrace> {
 private:
@@ -99,23 +99,17 @@ private:
 public:
   const std::string FilePointerVarName = "_MemoryTraceFP";
 
+  void addGlobalMemoryTraceFP(llvm::Module &M) {
+    auto &CTX = M.getContext();
 
-	void addGlobalMemoryTraceFP(llvm::Module &M)
-	{
-		auto &CTX = M.getContext();
-		// the type of FILE* (we're using i8* for simplicity)
-		PointerType *PtrTy = PointerType::getUnqual(Type::getInt8Ty(CTX));
+    M.getOrInsertGlobal(FilePointerVarName,
+                        PointerType::getUnqual(Type::getInt8Ty(CTX)));
 
-		// This will create the global if it doesn't exist, or return the existing one
-		Constant *maybeGV = M.getOrInsertGlobal(FilePointerVarName, PtrTy);
-		auto *GV = dyn_cast<GlobalVariable>(maybeGV);
-		assert(GV && "getOrInsertGlobal didn't give us a GlobalVariable!");
-
-		// Make it externally‐linkable
-		GV->setLinkage(GlobalValue::ExternalLinkage);
-		// **This line actually *defines* it** as a null pointer:
-		GV->setInitializer(ConstantPointerNull::get(PtrTy));
-	}
+    GlobalVariable *namedGlobal = M.getNamedGlobal(FilePointerVarName);
+    namedGlobal->setLinkage(GlobalValue::ExternalLinkage);
+    namedGlobal->setInitializer(llvm::ConstantPointerNull::get(
+        PointerType::getUnqual(Type::getInt8Ty(CTX))));
+  }
 
   const std::string TraceMemoryFunctionName = "_TraceMemory";
 

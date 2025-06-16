@@ -1,4 +1,4 @@
-
+#include <stdint.h>
 int main()
 {
   int *a = new int[10];
@@ -12,5 +12,5 @@ int main()
   {
     a[j] = b[j] + 1;
   }
-  return 0;
+  return 100;
 }

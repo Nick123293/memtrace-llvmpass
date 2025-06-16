@@ -1,9 +1,0 @@
-/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/edit_cache.dir
-/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/omp_gen.dir
-/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/intrinsics_gen.dir
-/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/rebuild_cache.dir
-/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/acc_gen.dir
-/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/ARMTargetParserTableGen.dir
-/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/AArch64TargetParserTableGen.dir
-/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/tracemem.dir
-/home/and21829/llvm/memtrace-llvmpass/build/CMakeFiles/RISCVTargetParserTableGen.dir

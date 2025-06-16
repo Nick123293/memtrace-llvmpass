@@ -72,7 +72,7 @@ define dso_local noundef i32 @main() #0 {
   br label %24, !llvm.loop !8
 
 41:                                               ; preds = %24
-  ret i32 0
+  ret i32 80
 }
 
 ; Function Attrs: nobuiltin allocsize(0)
